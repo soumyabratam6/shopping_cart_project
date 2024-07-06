@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Project</title>
+    <link
+      rel="shortcut icon"
+      href="asset/add-to-cart.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <div class="logo">
+        <img src="asset/add-to-cart.png" alt="logo" />
+        <p class="logo_P">FASHION</p>
+      </div>
+      <label class="hamburger">
+        <div class="open">☰</div>
+      </label>
+      <div class="links-container">
+        <div class="close-container">
+          <div class="close">&times;</div>
+        </div>
+        <ul>
+          <a class="nav_active_class" href="../index.html">HOME</a>
+          <a class="nav_active_class" href="../shop/shop.html">SHOP</a>
+          <a class="nav_active_class" href="../cart/cart.html">CART</a>
+          <a class="nav_active_class" href="../profile/login.html">LOGIN</a>
+          <a class="nav_active_class" href="../profile/signup.html">SIGIN</a>
+          <a class="nav_active_class" href="../profile/profile.html">PROFILE</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="shop_txt_img">
+      <p class="shope_para">#Stayhome</p>
+    </div>
+    <div class="shop_main_container">
+      <div class="filter">
+        <div class="filter_1">
+          <p class="shop_mini_heading">Price Range</p>
+          <span class="checkbox_txt">
+            <input type="checkbox" class="checkbox" value="0-25" />$0 to $25
+          </span>
+          <span class="checkbox_txt">
+            <input type="checkbox" class="checkbox" value="25-50" />$25 to $50
+          </span>
+          <span class="checkbox_txt">
+            <input type="checkbox" class="checkbox" value="50-100" />$50 to $100
+          </span>
+          <span class="checkbox_txt">
+            <input type="checkbox" class="checkbox" value="100-" />$100 onwards
+          </span>
+          <hr />
+          <p class="shop_mini_heading">Star Rating</p>
+          <span class="range_txt"
+            >1
+            <input
+              type="range"
+              class="range"
+              min="0"
+              max="5"
+              id="rating-range"
+            />
+            5
+          </span>
+          <button class="utility_btn filter_btn" id="apply-filter-btn">
+            Apply Filter
+          </button>
+        </div>
+      </div>
+      <div class="card_seach_utilitu_btn">
+        <input
+          type="text"
+          class="shop_search"
+          placeholder="search"
+          id="search-input"
+        />
+        <div class="btn_container">
+          <button
+            class="utility_btn shop_filter_btn active_shope"
+            data-category="all"
+          >
+            All
+          </button>
+          <button
+            class="utility_btn shop_filter_btn men"
+            data-category="men's clothing"
+          >
+            Mens
+          </button>
+          <button
+            class="utility_btn shop_filter_btn women"
+            data-category="women's clothing"
+          >
+            Women`s
+          </button>
+          <button
+            class="utility_btn shop_filter_btn Jewelery"
+            data-category="jewelery"
+          >
+            Jewelery
+          </button>
+          <div
+            class="utility_btn shop_filter_btn Electronic"
+            data-category="electronics"
+          >
+            Electronic
+          </div>
+        </div>
+        <div
+          class="card_container shop_card_container"
+          id="products-container"
+        ></div>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="footer_content container">
+        <div class="footer1">
+          <p class="footer_logo">FASHION</p>
+          <p class="footer_txt">
+            Complete your style with awesome<br />clothes from us.
+          </p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Quick Link</p>
+          <p class="footer_txt">Home</p>
+          <p class="footer_txt">LogIn</p>
+          <p class="footer_txt">SigIn</p>
+          <p class="footer_txt">Profile</p>
+          <p class="footer_txt">Shop</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Products</p>
+          <p class="footer_txt">Men`s Wear</p>
+          <p class="footer_txt">Women`s Wear</p>
+          <p class="footer_txt">Electronic</p>
+          <p class="footer_txt">Jewelery</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Legal</p>
+          <p class="footer_txt">Terms & Condition</p>
+          <p class="footer_txt">Privacy Policy</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

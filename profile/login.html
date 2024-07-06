@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Project</title>
+    <link
+      rel="shortcut icon"
+      href="asset/add-to-cart.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <div class="logo">
+        <img src="asset/add-to-cart.png" alt="logo" />
+        <p class="logo_P">FASHION</p>
+      </div>
+      <label class="hamburger">
+        <div class="open">☰</div>
+      </label>
+      <div class="links-container">
+        <div class="close-container">
+          <div class="close">&times;</div>
+        </div>
+        <ul>
+          <a class="nav_active_class" href="../index.html">HOME</a>
+          <a class="nav_active_class" href="../shop/shop.html">SHOP</a>
+          <a class="nav_active_class" href="../cart/cart.html">CART</a>
+          <a class="nav_active_class" href="../profile/login.html">LOGIN</a>
+          <a class="nav_active_class" href="../profile/signup.html">SIGIN</a>
+          <a class="nav_active_class" href="../profile/profile.html">PROFILE</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="login-hero container">
+      <p class="login-para-heading">LogIn</p>
+      <p class="login-para">
+        Here you need to provide your first name, last name, email, password and
+        confirm password to make your profile in your market place.
+      </p>
+      <form action="#login" id="login-form">
+        <div class="login_form_div">
+          <label for="email_sigin">Email</label>
+          <input type="email" id="email_sigin" autocomplete="off" />
+        </div>
+        <div class="login_form_div">
+          <label for="password_signin">Password</label>
+          <input type="password" id="password_signin" autocomplete="off" />
+        </div>
+        <button class="SignIn_btn utility_btn">SigIn</button>
+        <p class="error" style="color: red"></p>
+        <p class="success"></p>
+      </form>
+    </div>
+    <section class="footer">
+      <div class="footer_content container">
+        <div class="footer1">
+          <p class="footer_logo">FASHION</p>
+          <p class="footer_txt">
+            Complete your style with awesome<br />clothes from us.
+          </p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Quick Link</p>
+          <p class="footer_txt">Home</p>
+          <p class="footer_txt">LogIn</p>
+          <p class="footer_txt">SigIn</p>
+          <p class="footer_txt">Profile</p>
+          <p class="footer_txt">Shop</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Products</p>
+          <p class="footer_txt">Men`s Wear</p>
+          <p class="footer_txt">Women`s Wear</p>
+          <p class="footer_txt">Electronic</p>
+          <p class="footer_txt">Jewelery</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Legal</p>
+          <p class="footer_txt">Terms & Condition</p>
+          <p class="footer_txt">Privacy Policy</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

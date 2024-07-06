@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Project</title>
+    <link
+      rel="shortcut icon"
+      href="asset/add-to-cart.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <div class="logo">
+        <img src="asset/add-to-cart.png" alt="logo" />
+        <p class="logo_P">FASHION</p>
+      </div>
+      <label class="hamburger">
+        <div class="open">☰</div>
+      </label>
+      <div class="links-container">
+        <div class="close-container">
+          <div class="close">&times;</div>
+        </div>
+        <ul>
+          <a class="nav_active_class" href="../index.html">HOME</a>
+          <a class="nav_active_class" href="../shop/shop.html">SHOP</a>
+          <a class="nav_active_class" href="../cart/cart.html">CART</a>
+          <a class="nav_active_class" href="../profile/login.html">LOGIN</a>
+          <a class="nav_active_class" href="../profile/signup.html">SIGIN</a>
+          <a class="nav_active_class" href="../profile/profile.html">PROFILE</a>
+        </ul>
+      </div>
+    </nav>
+    <!-- This section contain a bg-Img and text image -->
+    <div class="shop_txt_img">
+      <p class="cart_para">#Buy Now</p>
+    </div>
+
+    <!-- This section contain checkout and cart detail -->
+    <div class="cart_main_container container">
+      <div class="cart_detail">
+        <div class="card_container cart_html"></div>
+
+        <div class="total-amount">
+          <p class="sub_total"></p>
+          <button class="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="footer_content container">
+        <div class="footer1">
+          <p class="footer_logo">FASHION</p>
+          <p class="footer_txt">
+            Complete your style with awesome<br />clothes from us.
+          </p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Quick Link</p>
+          <p class="footer_txt">Home</p>
+          <p class="footer_txt">LogIn</p>
+          <p class="footer_txt">SigIn</p>
+          <p class="footer_txt">Profile</p>
+          <p class="footer_txt">Shop</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Products</p>
+          <p class="footer_txt">Men`s Wear</p>
+          <p class="footer_txt">Women`s Wear</p>
+          <p class="footer_txt">Electronic</p>
+          <p class="footer_txt">Jewelery</p>
+        </div>
+        <div class="footer2">
+          <p class="footer_mini_para">Legal</p>
+          <p class="footer_txt">Terms & Condition</p>
+          <p class="footer_txt">Privacy Policy</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </body>
+</html>
