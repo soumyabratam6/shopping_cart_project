@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeButton = document.querySelector(".links-container .close");
   const linksContainer = document.querySelector(".links-container");
   const navLinks = document.querySelectorAll(".nav_active_class");
-
+  const clickbtn = document.getElementById("btn-toggle");
+  
   const toggleMenu = () => {
     linksContainer.classList.toggle("active");
   };
